@@ -1,0 +1,16 @@
+[
+    {
+        "securityKey": "Mec4216",
+        "role": "admin"
+    },
+    {
+        "enrollNumber": "210697",
+        "username": "Nandhakumar",
+        "role": "user"
+    },
+    {
+        "enrollNumber": "220643",
+        "username": "Mohandass",
+        "role": "user"
+    }
+]
