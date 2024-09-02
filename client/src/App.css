@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --body-bg: #f5f8ff;
+  --box-bg: #fff;
+  --input-bg: #f5f8ff;
+  --txt-color: #2f2d2f;
+  --txt-first-color: #fff;
+  --txt-second-color: #ccc;
+  --border-color: #4267b2;
+  --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins' , sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+  /* background-image: url('../src/assets/Images/bg.jpeg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+}
+
+.box {
+  background-color: var(--box-bg);
+  padding: 15px 30px;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.page{
+  width: 100%;
+  padding: 30px;
+}
+
+.home{
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-out;
+}
+
+.home.show::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+.home.show .form_container {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.Admin{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+.Admin-Nav{
+  width: 20%;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.Admin-content{
+  position: relative;
+  top: 0;
+  width: 80%;
+}
+.Admin-content .Newsdisplay{
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.Student{
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  padding: 0 0 25% 0;
+  background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+}
+.nav-section{
+  position: relative;
+  top: 0;
+  z-index: 1000;
+}
+.std-content{
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  top: 70px;
+}

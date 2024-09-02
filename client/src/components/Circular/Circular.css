@@ -1,0 +1,100 @@
+.main{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.circular-upload{
+    width: 80%;
+    padding: 10px 20px;
+}
+.inputfield{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.inputfield input{
+    padding: 10px 5px;
+    background-color: white;
+    background: linear-gradient(
+        to right top,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+    backdrop-filter: blur(2rem);
+    border: none;
+}
+.inputfield button {
+    padding: 10px 0;
+    cursor: pointer;
+    color: #fff;
+    background-color: var( --border-color);
+}
+.circular-list{
+    width: 90%;
+    padding: 10px 20px;
+}
+
+.circular-list ul{
+    list-style: none;
+    padding: 10px 0 0 0;
+}
+.circular-list li{
+    background: linear-gradient(
+      to right top,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    backdrop-filter: blur(2rem);
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+.circular-list li img{
+    width: 100px;
+    height: 100px;
+    padding: 10px 10px;
+}
+.circular-list li .text{
+    margin: 0 20px;
+}
+.circular-list li h1{
+    font-size: 1rem;
+}
+.circular-list li button{
+    padding: 10px 20px;
+    justify-content: flex-end;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: var( --border-color);
+}
+.news-list{
+    background-color: white;
+    background: linear-gradient(
+        to right top,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+    backdrop-filter: blur(2rem);
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.news-list button{
+    padding: 10px 20px;
+    justify-content: flex-end;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: var( --border-color);
+}

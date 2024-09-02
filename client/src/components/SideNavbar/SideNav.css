@@ -1,0 +1,89 @@
+.header{
+    width: 20%;
+    height: 100vh;
+}
+.side-nav{
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.side-nav h1{
+    font-size: 1.3rem;
+    margin: 5px 0 10px 10px;
+    color: #000;
+}
+.side-nav h1 i{
+    margin-left: 10px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+}
+.user div{
+    margin: auto;
+}
+.user h2{
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    margin: 5px 0;
+}
+.user p{
+    margin: 0;
+}
+.user-img{
+    width: 40px;
+    border-radius: 50%;
+    margin: auto;
+}
+.edit-img{
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.sidenav-ul{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+.sidenav-ul li{
+    margin: 5px 0;
+    padding-left: 10px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.sidenav-ul li:hover{
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+.sidenav-ul li i{
+    font-size: 20px;
+    margin-right: 15px;
+    /* margin-top: 5px; */
+}
+.sidenav-ul li p{
+    margin: 10px 0;
+    white-space: nowrap;
+    font-size: 0.9em;
+}
